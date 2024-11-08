@@ -153,6 +153,7 @@
     </form>
 <br>
 
+<a href="{{route('upload.view')}}" class="btn btn-info">Subir Excel</a> 
 </body>
 
 </html>

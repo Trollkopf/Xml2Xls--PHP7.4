@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ExcelUploadController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\XmlToExcelController;
 
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::post('/convert', [XmlToExcelController::class, 'convert'])->name('convert.xml.to.excel');
+Route::post('/upload-excel', [ExcelUploadController::class, 'uploadExcel'])->name('upload.excel');
+Route::get('/upload', [ExcelUploadController::class, 'showUploadForm'])->name('upload.view');
