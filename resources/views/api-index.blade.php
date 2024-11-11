@@ -4,139 +4,74 @@
     <h1 class="text-center mb-4 text-success">Descargar Excel</h1>
     <div class="card shadow-sm p-4 bg-danger-subtle">
         <div class="d-grid gap-2">
-            <form action="{{route('convert.xml.to.excel')}}" method="POST">
-                @csrf
-                <input type="text" id="xml_url" name="xml_url" value="https://www.oleinternational.com/kyero/general/thomasbesthomes/" hidden>
-                <input type="text" id="xls_name" name="xls_name" value="Web" hidden>
-                <input type="checkbox" name="fields[]" value="id" checked hidden>
-                <input type="checkbox" name="fields[]" value="date" checked hidden>
-                <input type="checkbox" name="fields[]" value="ref" checked hidden>
-                <input type="checkbox" name="fields[]" value="price" checked hidden>
-                <input type="checkbox" name="fields[]" value="new_build" checked hidden>
-                <input type="checkbox" name="fields[]" value="type" checked hidden>
-                <input type="checkbox" name="fields[]" value="town" checked hidden>
-                <input type="checkbox" name="fields[]" value="province" checked hidden>
-                <input type="checkbox" name="fields[]" value="country" checked hidden>
-                <input type="checkbox" name="fields[]" value="location_detail" checked hidden>
-                <input type="checkbox" name="fields[]" value="beds" checked hidden>
-                <input type="checkbox" name="fields[]" value="baths" checked hidden>
-                <input type="checkbox" name="fields[]" value="pool" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.built" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
-                <input type="checkbox" name="fields[]" value="url.es" checked hidden>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-danger btn-lg">Web</button>
-                </div>
-            </form>
-            <form action="{{route('convert.xml.to.excel')}}" method="POST">
-                @csrf
-                <input type="text" id="xml_url" name="xml_url"
-                    value="https://xml.redsp.net/file/403/23r917h0551/general-zone-1-kyero.xml" hidden>
-                <input type="text" id="xls_name" name="xls_name" value="RedSP" hidden>
-                <input type="checkbox" name="fields[]" value="id" checked hidden>
-                <input type="checkbox" name="fields[]" value="date" checked hidden>
-                <input type="checkbox" name="fields[]" value="ref" checked hidden>
-                <input type="checkbox" name="fields[]" value="price" checked hidden>
-                <input type="checkbox" name="fields[]" value="new_build" checked hidden>
-                <input type="checkbox" name="fields[]" value="type" checked hidden>
-                <input type="checkbox" name="fields[]" value="town" checked hidden>
-                <input type="checkbox" name="fields[]" value="province" checked hidden>
-                <input type="checkbox" name="fields[]" value="country" checked hidden>
-                <input type="checkbox" name="fields[]" value="location_detail" checked hidden>
-                <input type="checkbox" name="fields[]" value="beds" checked hidden>
-                <input type="checkbox" name="fields[]" value="baths" checked hidden>
-                <input type="checkbox" name="fields[]" value="pool" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.built" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-danger btn-lg">RedSp</button>
-                </div>
-            </form>
-            <form action="{{route('convert.xml.to.excel')}}" method="POST">
-                @csrf
-                <input type="text" id="xml_url" name="xml_url"
-                    value="https://xml.redsp.net/file/403/23r917h0551/special-zone-1-kyero.xml" hidden>
-                <input type="text" id="xls_name" name="xls_name" value="RedSP_Especial" hidden>
-                <input type="checkbox" name="fields[]" value="id" checked hidden>
-                <input type="checkbox" name="fields[]" value="date" checked hidden>
-                <input type="checkbox" name="fields[]" value="ref" checked hidden>
-                <input type="checkbox" name="fields[]" value="price" checked hidden>
-                <input type="checkbox" name="fields[]" value="new_build" checked hidden>
-                <input type="checkbox" name="fields[]" value="type" checked hidden>
-                <input type="checkbox" name="fields[]" value="town" checked hidden>
-                <input type="checkbox" name="fields[]" value="province" checked hidden>
-                <input type="checkbox" name="fields[]" value="country" checked hidden>
-                <input type="checkbox" name="fields[]" value="location_detail" checked hidden>
-                <input type="checkbox" name="fields[]" value="beds" checked hidden>
-                <input type="checkbox" name="fields[]" value="baths" checked hidden>
-                <input type="checkbox" name="fields[]" value="pool" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.built" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-danger btn-lg">RedSp Special</button>
-                </div>
-            </form>
-            <form action="{{route('convert.xml.to.excel')}}" method="POST">
-                @csrf
-                <input type="text" id="xml_url" name="xml_url"
-                    value="https://app.vendomia.es/feed/xml/all/106/4cde8b2f744e822eb87ecef9bfac714c" hidden>
-                <input type="text" id="xls_name" name="xls_name" value="Oceanside" hidden>
-                <input type="checkbox" name="fields[]" value="id" checked hidden>
-                <input type="checkbox" name="fields[]" value="date" checked hidden>
-                <input type="checkbox" name="fields[]" value="ref" checked hidden>
-                <input type="checkbox" name="fields[]" value="price" checked hidden>
-                <input type="checkbox" name="fields[]" value="new_build" checked hidden>
-                <input type="checkbox" name="fields[]" value="type" checked hidden>
-                <input type="checkbox" name="fields[]" value="town" checked hidden>
-                <input type="checkbox" name="fields[]" value="province" checked hidden>
-                <input type="checkbox" name="fields[]" value="country" checked hidden>
-                <input type="checkbox" name="fields[]" value="location_detail" checked hidden>
-                <input type="checkbox" name="fields[]" value="beds" checked hidden>
-                <input type="checkbox" name="fields[]" value="baths" checked hidden>
-                <input type="checkbox" name="fields[]" value="pool" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.built" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-danger btn-lg">Oceanside</button>
-                </div>
-            </form>
-            <form action="{{route('convert.xml.to.excel')}}" method="POST">
-                @csrf
-                <input type="text" id="xml_url" name="xml_url"
-                    value="https://procesos.apinmo.com/portal/kyeroagencias3/6689-kyero-IYBg5qtA-reventas1.xml" hidden>
-                <input type="text" id="xls_name" name="xls_name" value="United_Real_State" hidden>
-                <input type="checkbox" name="fields[]" value="id" checked hidden>
-                <input type="checkbox" name="fields[]" value="date" checked hidden>
-                <input type="checkbox" name="fields[]" value="ref" checked hidden>
-                <input type="checkbox" name="fields[]" value="price" checked hidden>
-                <input type="checkbox" name="fields[]" value="new_build" checked hidden>
-                <input type="checkbox" name="fields[]" value="type" checked hidden>
-                <input type="checkbox" name="fields[]" value="town" checked hidden>
-                <input type="checkbox" name="fields[]" value="province" checked hidden>
-                <input type="checkbox" name="fields[]" value="country" checked hidden>
-                <input type="checkbox" name="fields[]" value="location_detail" checked hidden>
-                <input type="checkbox" name="fields[]" value="beds" checked hidden>
-                <input type="checkbox" name="fields[]" value="baths" checked hidden>
-                <input type="checkbox" name="fields[]" value="pool" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.built" checked hidden>
-                <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
-                <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-danger btn-lg">United Real State</button>
-                </div>
-            </form>
+            @php
+                $forms = [
+                    [
+                        'url' => 'https://www.oleinternational.com/kyero/general/thomasbesthomes/',
+                        'name' => 'Web',
+                        'includeUrlEs' => true,
+                    ],
+                    [
+                        'url' => 'https://xml.redsp.net/file/403/23r917h0551/general-zone-1-kyero.xml',
+                        'name' => 'RedSP',
+                        'includeUrlEs' => false,
+                    ],
+                    [
+                        'url' => 'https://xml.redsp.net/file/403/23r917h0551/special-zone-1-kyero.xml',
+                        'name' => 'RedSp Special',
+                        'includeUrlEs' => false,
+                    ],
+                    [
+                        'url' => 'https://app.vendomia.es/feed/xml/all/106/4cde8b2f744e822eb87ecef9bfac714c',
+                        'name' => 'Oceanside',
+                        'includeUrlEs' => false,
+                    ],
+                    [
+                        'url' => 'https://procesos.apinmo.com/portal/kyeroagencias3/6689-kyero-IYBg5qtA-reventas1.xml',
+                        'name' => 'United Real State',
+                        'includeUrlEs' => false,
+                    ],
+                ];
+
+                $fields = [
+                    'id',
+                    'date',
+                    'ref',
+                    'price',
+                    'new_build',
+                    'type',
+                    'town',
+                    'province',
+                    'country',
+                    'location_detail',
+                    'beds',
+                    'baths',
+                    'pool',
+                    'surface_area.built',
+                    'surface_area.plot',
+                    'energy_rating.consumption',
+                    'energy_rating.emissions',
+                ];
+            @endphp
+
+            @foreach ($forms as $form)
+                <form action="{{ route('convert.xml.to.excel') }}" method="POST">
+                    @csrf
+                    <input type="text" id="xml_url" name="xml_url" value="{{ $form['url'] }}" hidden>
+                    <input type="text" id="xls_name" name="xls_name" value="{{ $form['name'] }}" hidden>
+                    @foreach ($fields as $field)
+                        <input type="checkbox" name="fields[]" value="{{ $field }}" checked hidden>
+                    @endforeach
+                    @if ($form['includeUrlEs'])
+                        <input type="checkbox" name="fields[]" value="url.es" checked hidden>
+                    @endif
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-danger btn-lg">{{ $form['name'] }}</button>
+                    </div>
+                </form>
+            @endforeach
         </div>
     </div>
-
 
     <div class="container mt-5">
         <h2 class="text-center mb-4 text-primary">Subir Excel "Clientes"</h2>
