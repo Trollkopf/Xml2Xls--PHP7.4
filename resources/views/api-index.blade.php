@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class="text-center mb-4 text-success">Descargar Excel</h1>
-    <div class="card shadow-sm p-4 bg-success-subtle">
+    <div class="card shadow-sm p-4 bg-danger-subtle">
         <div class="d-grid gap-2">
             <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
@@ -27,7 +27,7 @@
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
                 <input type="checkbox" name="fields[]" value="url.es" checked hidden>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-lg">Web</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Web</button>
                 </div>
             </form>
             <form action="{{route('convert.xml.to.excel')}}" method="POST">
@@ -53,7 +53,7 @@
                 <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-lg">RedSp</button>
+                    <button type="submit" class="btn btn-danger btn-lg">RedSp</button>
                 </div>
             </form>
             <form action="{{route('convert.xml.to.excel')}}" method="POST">
@@ -79,7 +79,7 @@
                 <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-lg">RedSp Special</button>
+                    <button type="submit" class="btn btn-danger btn-lg">RedSp Special</button>
                 </div>
             </form>
             <form action="{{route('convert.xml.to.excel')}}" method="POST">
@@ -105,7 +105,7 @@
                 <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-lg">Oceanside</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Oceanside</button>
                 </div>
             </form>
             <form action="{{route('convert.xml.to.excel')}}" method="POST">
@@ -131,7 +131,7 @@
                 <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success btn-lg">United Real State</button>
+                    <button type="submit" class="btn btn-danger btn-lg">United Real State</button>
                 </div>
             </form>
         </div>
