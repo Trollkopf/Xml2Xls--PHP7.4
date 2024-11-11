@@ -31,6 +31,7 @@
                         'name' => 'United Real State',
                         'includeUrlEs' => false,
                     ],
+
                 ];
 
                 $fields = [
@@ -79,7 +80,7 @@
             <form action="{{ route('upload.excel') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="excelFile" class="form-label">Seleccione un archivo Excel</label>
+                    <label for="excelFile" class="form-label">Seleccione un archivo Excel (.xls, .xlsx, etc...)</label>
                     <input type="file" name="excelFile" id="excelFile" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">Cargar y Procesar</button>
