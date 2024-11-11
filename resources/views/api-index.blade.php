@@ -4,10 +4,10 @@
     <h1 class="text-center mb-4 text-success">Descargar Excel</h1>
     <div class="card shadow-sm p-4 bg-success-subtle">
         <div class="d-grid gap-2">
-            <form action="/convert" method="POST">
+            <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
-                <input type="text" id="xml_url" name="xml_url" value=" " hidden>
-                <input type="text" id="xls_name" name="xls_name" value="RedSP" hidden>
+                <input type="text" id="xml_url" name="xml_url" value="https://www.oleinternational.com/kyero/general/thomasbesthomes/" hidden>
+                <input type="text" id="xls_name" name="xls_name" value="Web" hidden>
                 <input type="checkbox" name="fields[]" value="id" checked hidden>
                 <input type="checkbox" name="fields[]" value="date" checked hidden>
                 <input type="checkbox" name="fields[]" value="ref" checked hidden>
@@ -25,11 +25,12 @@
                 <input type="checkbox" name="fields[]" value="surface_area.plot" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.consumption" checked hidden>
                 <input type="checkbox" name="fields[]" value="energy_rating.emissions" checked hidden>
+                <input type="checkbox" name="fields[]" value="url.es" checked hidden>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-success btn-lg">Web</button>
                 </div>
             </form>
-            <form action="/convert" method="POST">
+            <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
                 <input type="text" id="xml_url" name="xml_url"
                     value="https://xml.redsp.net/file/403/23r917h0551/general-zone-1-kyero.xml" hidden>
@@ -55,7 +56,7 @@
                     <button type="submit" class="btn btn-success btn-lg">RedSp</button>
                 </div>
             </form>
-            <form action="/convert" method="POST">
+            <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
                 <input type="text" id="xml_url" name="xml_url"
                     value="https://xml.redsp.net/file/403/23r917h0551/special-zone-1-kyero.xml" hidden>
@@ -81,7 +82,7 @@
                     <button type="submit" class="btn btn-success btn-lg">RedSp Special</button>
                 </div>
             </form>
-            <form action="/convert" method="POST">
+            <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
                 <input type="text" id="xml_url" name="xml_url"
                     value="https://app.vendomia.es/feed/xml/all/106/4cde8b2f744e822eb87ecef9bfac714c" hidden>
@@ -107,7 +108,7 @@
                     <button type="submit" class="btn btn-success btn-lg">Oceanside</button>
                 </div>
             </form>
-            <form action="/convert" method="POST">
+            <form action="{{route('convert.xml.to.excel')}}" method="POST">
                 @csrf
                 <input type="text" id="xml_url" name="xml_url"
                     value="https://procesos.apinmo.com/portal/kyeroagencias3/6689-kyero-IYBg5qtA-reventas1.xml" hidden>
