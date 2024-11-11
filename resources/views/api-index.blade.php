@@ -74,7 +74,7 @@
     </div>
 
     <div class="container mt-5">
-        <h2 class="text-center mb-4 text-primary">Subir Excel "Clientes"</h2>
+        <h1 class="text-center mb-4 text-primary">Subir Excel "Clientes"</h1>
         <div class="card shadow-sm p-4 bg-info-subtle">
             <form action="{{ route('upload.excel') }}" method="POST" enctype="multipart/form-data">
                 @csrf
